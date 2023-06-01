@@ -1,0 +1,116 @@
+:root {
+    --navajo-white: #ffdda1ff;
+    --sunglow: #ffd151ff;
+    --saffron: #f8c537ff;
+    --xanthous: #edb230ff;
+    --pumpkin: #e77728ff;
+    --charcoal: #2b2d42;
+  }
+  
+  .logo {
+    width: 75px;
+    height: 70px;
+    background-color: var(--navajo-white);
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #logo-div h2 {
+    display: inline;
+    font-family: arial, sans-serif;
+    color: var(--saffron);
+  }
+  
+  #logo-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  header div, header nav {
+    display: inline-block;
+    background-color: var(--navajo-white);
+  }
+  
+  iframe {
+    width: 25rem;
+    height: 15rem;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--navajo-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+  }
+  
+  body {
+    padding-top: 7rem;
+    font-family: Arial, sans-serif;
+    background-color: var(--navajo-white);
+    color: var(--charcoal);
+  }
+  
+  nav a {
+    color: var(--xanthous);
+    text-decoration: none;
+    padding: 0 1rem;
+  }
+  
+  nav a:hover {
+    color: var(--sunglow);
+  }
+  
+  #product-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .product-label {
+    display: inline-block;
+    background-color: var(--saffron);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--charcoal);
+    cursor: pointer;
+    width: calc(100% / 3 - (2rem + 1rem));
+  }
+  
+  .product-label:hover {
+    background-color: var(--sunglow);
+  }
+  
+  input[type="submit"] {
+    background-color: var(--xanthous);
+    color: var(--charcoal);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 20rem
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--sunglow);
+  }
+  
+  .select-label{
+    display: block;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem
+  }
+  
+  @media (max-width: 800px) {
+    #product-options {
+      flex-direction: column;
+    }
+  }

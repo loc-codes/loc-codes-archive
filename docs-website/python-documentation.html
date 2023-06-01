@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Basics</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+          <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+              <li><a class= "nav-link" href="#Introduction">Introduction</a></li>
+              <li><a class= "nav-link" href="#Hello,_world!">Hello, world!</a></li>
+              <li><a class= "nav-link" href="#Variables">Variables</a></li>
+              <li><a class= "nav-link" href="#Strings,_Integers_and_Floats">Strings, Integers and Floats</a></li>
+              <li><a class= "nav-link" href="#Boolean_Logic">Boolean Logic</a></li>
+            </ul>
+          </nav>
+        <section class="main-section" id="Introduction">
+          <header><h2>Introduction</h2></header>
+        <p>
+          Python is a high-level, interpreted programming language that is widely used for developing applications in various fields such as:
+          <ul>
+            <li>Web Development</li>
+            <li>Scientific Computing</li>
+            <li>Data Analysis</li>
+            <li>Artificial Intelligence</li>
+          </ul> 
+          Python was first released in 1991 by Guido van Rossum and has since then become one of the most popular programming languages in the world.
+        </p>
+        <p>
+          Python is designed to be easy to read and write, with a clean syntax and intuitive object-oriented approach. It has a vast standard library that provides many useful modules and functions for various tasks such as file I/O, networking, regular expressions, and more. Additionally, Python has a large community of developers who have created many third-party packages that extend its capabilities even further.
+        </p>
+      </section>
+      <section class="main-section" id="Hello,_world!">
+        <header><h2>Hello, world!</h2></header>
+        <p>Printing "Hello, World!" is often the first program that developers learn to write in a new programming language.
+        </p>
+        <p>
+          To print "Hello, World!" in Python, you can use the built-in print() function. This function takes one or more arguments and prints them to the console.
+        </p>
+        <p>
+          Here is an example of how to use the print() function to print "Hello, World!" in Python:
+        </p>
+      <code>print("Hello, world!")
+</code>
+      <p>
+        When you run this program in IDLE, you will see the output "Hello, World!" printed to the console.
+      </p>
+      <code>
+        >>> print('Hello, world!')
+        <br>... Hello, world!
+      </code>
+<p>Congratulations! You have just written your first Python program!</p>
+      </section>
+      <section class="main-section" id="Variables">
+        <header><h2>Variables</h2></header>
+        <p>
+          In programming, variables are used to store data that can be used later in the program. In Python, variables are created when you assign a value to them using the assignment operator =.
+          </p>
+          <p>
+Here is an example of how to create a variable and assign it a value in Python:
+          </p>
+          <code>
+          message = "Hello, World!"
+          </code>
+          <p>
+            In this case, we are creating a variable called message and assigning it the value "Hello, World!".
+          </p>
+          <p>
+            Python variables can hold many different types of data. You do not need to declare the type of a variable in Python. Python automatically works this out!
+          </p>
+          <p>
+            Variables in Python can also be reassigned with a new value at any time. For example:
+          </p>
+          <code>
+            >>> x = 5
+            <br>>>> print(x)  
+            <br>... 5
+            <br><br>>>> x = "Hello"
+            <br>>>> print(x)
+            <br>... Hello
+          </code>
+          <p>In this example, we first assign the integer value 5 to the variable x, and then we reassign it with the string "Hello".
+
+          </p>
+          <p>
+            In addition to storing data, variables can also be used in expressions and calculations. For example:
+            </p>
+          <code>
+            >>> x = 5
+            <br>>>> y = 3 
+            <br>>>> z = x + y
+            <br>>>> print(z)
+            <br>... 8
+          </code>
+          <p>In this case, we are creating two variables x and y, assigning them the values 5 and 3 respectively, and then creating a third variable z which is the sum of x and y.</p>
+      </section>
+      <section class="main-section" id="Strings,_Integers_and_Floats">
+        <header><h2>Strings, Integers and Floats</h2></header>
+          <p>In Python, three of the most commonly used data types are:
+            <ul>
+              <li>Strings</li>
+              <li>Integers</li>
+              <li>Floats</li>
+            </ul>
+            Let's take a closer look at each of these types and how to work with them in Python.
+</p>
+          <p><h4>Strings</h4></p>
+          <p>A string is a sequence of characters, enclosed in either single or double quotes.</p> 
+          <p>Here is an example of a string in Python:</p>
+          <code>
+            >>> name = "John"
+          </code>
+          <p>You can concatenate two or more strings using the + operator:</p>
+          <code>
+            >>> greeting = "Hello"
+<br>>>> name = "John"
+<br>>>> message = greeting + " " + name
+<br><br>>>> print(message)
+<br>... Hello John
+          </code>
+          <p><h4>Integers</h4></p>
+          <p> An integer is a whole number, either positive or negative. You can perform operations on integers using the standard mathematical operators such as +, -, *, and /. </p>
+          <p>Recall the example from the last section:</p>
+          <code>
+            >>> x = 5
+            <br>>>> y = 3 
+            <br>>>> z = x + y
+            <br>>>> print(z)
+            <br>... 8
+          </code>
+          <p><h4>Floats</h4></p> 
+          <p>A float is a number with a decimal point. You can perform operations on floats in the same way as integers.</p>
+          <p>Here is an example:</p>
+          <code>
+            >>> x = 3.14
+            <br>>>> y = 2.0 
+            <br>>>> z = x * y
+            <br>>>> print(z)
+            <br>... 6.28
+          </code>
+      </section>
+      <section class="main-section" id="Boolean_Logic">
+        <header><h2>Boolean Logic</h2></header>
+          <p>Boolean logic is a fundamental concept in programming that deals with true/false values. In Python, the two Boolean values are True and False </p>
+          <p>You can create Boolean expressions using comparison operators such as ==, !=, >, <, >=, and <=. </p>
+          <p>Here are some examples:</p>
+          <code>
+            >>> x = 5
+            <br>>>> y = 3
+            <br><br>>>> print(x > y)
+            <br>... True
+            <br><br>>>> print(x = y)
+            <br>... False
+          </code>
+          <p>Boolean expressions can also be combined using logical operators such as "and", "or", and "not". </p>
+          <p>Here are some examples:</p>
+          <code>
+            >>> x = 5
+            <br>>>> y = 3
+            <br>>>> z = 7 
+            <br><br>>>> print(x > y and x < z)
+            <br>... True
+            <br><br>>>> print(x < y or x < z)
+            <br>... True
+            <br><br>>>> print(not x > y)
+            <br>... False
+          </code>
+          <p>In this case, we are using the and, or, and not operators to create more complex Boolean expressions.<br></p>
+      </section>
+    </main>
+  </body>
+</html>

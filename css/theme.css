@@ -1,0 +1,28 @@
+:root {
+    --timber: #dcc48eff;
+    --fade: #eaefd3ff;
+    --forest: #b3c0a4ff;
+    --light: #9a9bb1;
+    --mid: #84869F;
+    --dark: #27233aff;
+  }
+
+body, h1 {
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+    background-color: var(--forest);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark);
+    font-size: 1rem;
+    padding: 2vh 1vw;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}

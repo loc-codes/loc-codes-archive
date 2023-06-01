@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2966ec94.css",
+    "main.js": "./static/js/main.a0bad5a8.js",
+    "static/js/787.c419f7a1.chunk.js": "./static/js/787.c419f7a1.chunk.js",
+    "static/media/background.jpg": "./static/media/background.18ea378e1d7b45ea3850.jpg",
+    "static/media/Chord_3.mp3": "./static/media/Chord_3.ccd52db0de2b25224747.mp3",
+    "static/media/RolandTB303.otf": "./static/media/RolandTB303.d278e6014c3b555756ff.otf",
+    "static/media/Chord_1.mp3": "./static/media/Chord_1.056deed37061ab33971e.mp3",
+    "static/media/Chord_2.mp3": "./static/media/Chord_2.76fd4bb46848c060cc12.mp3",
+    "static/media/Kick.mp3": "./static/media/Kick.72881f4bf80d341da208.mp3",
+    "static/media/Open_Hat.mp3": "./static/media/Open_Hat.5f33c02936f6ec6f8199.mp3",
+    "static/media/Clap.mp3": "./static/media/Clap.faf5d12a1a4a7ffacf09.mp3",
+    "static/media/Kick_n_Hat.mp3": "./static/media/Kick_n_Hat.6dc44dc15fca60d9d594.mp3",
+    "static/media/Shaker.mp3": "./static/media/Shaker.4fc593585be310d2ff72.mp3",
+    "static/media/Closed_Hat.mp3": "./static/media/Closed_Hat.0b159bd307a31937b138.mp3",
+    "index.html": "./index.html",
+    "main.2966ec94.css.map": "./static/css/main.2966ec94.css.map",
+    "main.a0bad5a8.js.map": "./static/js/main.a0bad5a8.js.map",
+    "787.c419f7a1.chunk.js.map": "./static/js/787.c419f7a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2966ec94.css",
+    "static/js/main.a0bad5a8.js"
+  ]
+}

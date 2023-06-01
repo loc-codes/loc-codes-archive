@@ -1,0 +1,99 @@
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main */
+  #main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  #title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle */
+  #subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #757575;
+    margin-bottom: 30px;
+  }
+  
+  /* Dates */
+  #dates {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9e9e9e;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  
+  
+  /* Image */
+  #img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    
+  }
+  
+  #image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    height: auto; 
+  }
+  
+  #img-caption {
+    font-size: 0.9rem;
+    color: #757575;
+    margin-top: 10px;
+  }
+  
+  /* Info */
+  #info-div ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #info-div li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  #tribute-info {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  
+  /* Link */
+  #link-div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #tribute-link {
+    font-size: 1.1rem;
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  #tribute-link:hover {
+    text-decoration: underline;
+  }

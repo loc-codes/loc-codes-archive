@@ -1,0 +1,242 @@
+:root {
+    --timber: #dcc48eff;
+    --fade: #eaefd3ff;
+    --forest: #b3c0a4ff;
+    --light: #9a9bb1;
+    --mid: #84869F;
+    --dark: #27233aff;
+  }
+
+body, html, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    min-width: none;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top:0
+}
+
+
+#name {
+    font-size: 3rem;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    color: var(--dark);
+}
+
+#profession {
+    color: rgb(100,100,100);
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+#landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+    color: var(--dark);
+    margin: auto;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+#headshot-container img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10%;
+    object-fit: cover;
+    max-width: 900px;
+    max-height: 900px;
+    margin: auto;
+}
+
+#intro-container {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 0 5vw;
+    max-width: 750px;  
+}
+
+
+#landing a {
+    display: inline-block;
+    justify-content: space-between;
+    color:  rgb(30,30,30);
+    margin: 0 2vw;
+    font-size: 1.1rem;
+}
+
+#skills {
+    background-color: var(--light);
+    color: var(--dark);
+    width: 95vw;
+    padding: 0 2.5vw;
+    border-top: 0.75vh solid var(--dark);
+    text-align: left;
+}
+
+.languages, .libraries {
+    flex: 1;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    max-width: 900px;
+}
+
+.languages ul, .libraries ul {
+    columns: 2;
+    column-gap: 2rem;
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+.languages li, .libraries li {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    color: rgb(50,50,50);
+}
+
+.languages i, .libraries i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+@media (min-width: 768px) { 
+    #portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) { 
+    #portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.portfolio-item {
+    width: 95%;
+    max-width: 400px;
+    margin: auto ;
+    border: 0.4rem solid var(--dark);
+    padding-top: 1.8rem;
+    object-fit: contain;
+    background-color: var(--timber);
+    border-radius: 10px;
+}
+
+@media (min-width: 1400px) {
+    .portfolio-item {
+        max-width: 600px; 
+    }
+}
+
+
+.portfolio-item a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 16.5rem;
+    object-fit: cover;
+    border: 1px solid var(--dark);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.portfolio-item h4 {
+    margin: 0.5rem 0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.small-portfolio-title {
+    font-size: 1.3rem
+}
+
+#button-container {
+    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills button {
+    width: 20rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 3vh;
+    border: none;
+    background-color: var(--dark);
+    color: var(--fade);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 389px){
+    #intro-container, #landing a {
+        font-size: 0.85rem;
+    }
+
+    #name {
+        font-size: 2.25rem;
+    }
+
+    #profession {
+        font-size: 1.1rem;
+    }
+
+    #nav a{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-height: 950px){
+    #intro-container, #landing a {
+        font-size: 1.5rem;
+    }
+
+    #name {
+        font-size: 4rem;
+    }
+
+    #profession {
+        font-size: 2rem;
+    }
+
+    #nav a{
+        font-size: 1.2rem;
+    }
+
+    #headshot-container img {
+        height: 25rem;
+        width: 25rem;
+    }
+}

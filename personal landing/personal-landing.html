@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loc_codes</title>
+    <style>
+        html{
+            min-width: 630px;
+        }
+        body, a {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            width: 80%;
+            margin: 50px auto;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+    <script>
+        const terminal = document.getElementById('terminal');
+        const text = `
+>>> Welcome to...
+    __                  ______          __         
+   / /   ____  _____   / ____/___  ____/ /__  _____
+  / /   / __ \\/ ___/  / /   / __ \\/ __  / _ \\/ ___/
+ / /___/ /_/ / /__   / /___/ /_/ / /_/ /  __(__  ) 
+/_____/\\____/\\___/   \\____/\\____/\\__,_/\\___/____/  
+                                     
+>>> DIRECTORY:
+>>>
+>>> - About Me
+>>> - My Portfolio
+>>> - Contact Me`;
+
+        const links = {
+            'About Me': 'index.html',
+            'My Portfolio': 'portfolio.html',
+            'Contact Me': 'contact.html'
+        };
+
+        let currentIndex = 0;
+        let linkIndex = 0;
+        let linkText = '';
+
+        function addLink() {
+            const link = document.createElement('a');
+            link.href = links[linkText];
+            link.innerText = linkText;
+            link.style.color = 'lime';
+            link.onmouseover = function() { this.style.color = 'white'; };
+            link.onmouseout = function() { this.style.color = 'lime'; };
+            terminal.append(link);
+            terminal.append(document.createElement('br')); 
+            linkText = '';
+            linkIndex = 0;
+        }
+
+        function typeText() {
+            if (currentIndex < text.length) {
+                if (text[currentIndex] === '-') {
+                    linkIndex = currentIndex + 2;
+                }
+                if (currentIndex >= linkIndex && linkIndex !== 0 && text[currentIndex] !== '\n') {
+                    linkText += text[currentIndex];
+                }
+                if (linkIndex !== 0 && text[currentIndex] === '\n') {
+                    addLink();
+                } else if (linkIndex === 0 || text[currentIndex] === '\n') {
+                    terminal.innerHTML += text[currentIndex];
+                }
+                currentIndex++;
+                setTimeout(typeText, 1);
+            } else if (linkText !== '') {
+                addLink();
+            }
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
