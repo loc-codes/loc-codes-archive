@@ -143,7 +143,6 @@ body, html, main {
     max-width: 400px;
     margin: auto ;
     border: 0.4rem solid var(--dark);
-    padding-top: 1.8rem;
     object-fit: contain;
     background-color: var(--timber);
     border-radius: 10px;
